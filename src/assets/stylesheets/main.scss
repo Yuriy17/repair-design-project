@@ -6,7 +6,7 @@
   'abstracts/mixins';
 
 @import
-  'vendors/normalize';
+  'vendors/reset';
 
 @import
   'base/base',
@@ -16,9 +16,13 @@
 
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/section-1',
+  'layout/section-2',
+  'layout/section-3';
 
 @import
-  'components/button';
+  'components/button',
+  'components/navbar';
 
 

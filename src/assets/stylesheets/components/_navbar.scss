@@ -1,0 +1,21 @@
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    // .navbar--item
+
+    &--item {
+
+    }
+
+    // .navbar--link
+
+    &--link {
+
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $light-gold;
+        }
+    }
+}

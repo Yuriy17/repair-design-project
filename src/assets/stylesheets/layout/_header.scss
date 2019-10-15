@@ -1,3 +1,54 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+    
+    background-color: $main-color;
+    color: white;
+    font-size: 1.4em;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    // .header-wrapper
+
+    &_wrapper {
+        width: 87.5%;
+        height: 44.58%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header--logo_item
+
+    &--logo_item {
+
+        color:$light-gold;
+
+    }
+
+    // .header--nav_item
+
+    &--nav_item {
+        width:46.2%;
+    }
+
+    // .header--tel_link_item
+
+    &--tel_link_item {
+
+        color:$light-gold;
+        text-decoration: underline;
+    }
+
+    // .header--request_button_item
+
+    &--request_button_item {
+        background-color: $light-gold;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        padding: 0.9% 3%;
+    }
+}

@@ -70,8 +70,11 @@ module.exports = {
         new CleanWebpackPlugin(),
     ],
     devServer: {
+        index: 'index.html',
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 9000
+        port: 9000,
+        writeToDisk:true,
+        open: true //open in chrome
     }
 };
