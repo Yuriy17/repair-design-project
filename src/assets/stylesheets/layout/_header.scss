@@ -14,7 +14,7 @@
     // .header-wrapper
 
     &_wrapper {
-        width: 87.5%;
+        width: 88.5%;
         height: 44.58%;
         display: flex;
         justify-content: space-between;
@@ -25,6 +25,7 @@
 
     &--logo_item {
 
+        font-family: $futurademic-font;
         color:$light-gold;
 
     }
@@ -39,6 +40,7 @@
 
     &--tel_link_item {
 
+        font-family: $futurademic-font;
         color:$light-gold;
         text-decoration: underline;
     }
@@ -46,9 +48,8 @@
     // .header--request_button_item
 
     &--request_button_item {
-        background-color: $light-gold;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-        border-radius: 2px;
-        padding: 0.9% 3%;
+
+        padding: 0 31px;
+
     }
 }

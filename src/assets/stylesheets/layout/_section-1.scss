@@ -1,62 +1,110 @@
 .home {
 
-    // .home--aside_instagram
+    display: flex;
+    position: relative;
+    justify-content: stretch;
 
-    &--aside_instagram {
-    }
+}
 
-    // .home--vertical_link
+.aside_instagram {
+
+    // .aside_instagram--vertical_link
+    background-color: $main-color;
+    color: $light-gold;
+    font-size: 1.4em;
+    padding: 0 4px;
+    display: flex;
 
     &--vertical_link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    // .home--vertical_line
+    // .aside_instagram--vertical_link_text
 
-    &--vertical_line {
+    &--vertical_link_text {
+
+        transform: rotate(90deg);
+        padding: 30px 0px;
+
     }
 
-    // .home--main_image
+    // .aside_instagram--vertical_link_line
 
-    &--main_image {
+    &--vertical_link_line {
+        border-left: 2px solid $light-gold;
+        height: 51px;
+        margin-left: 41px;
+        margin-top: 45px;
     }
+}
 
-    // .home--content
+.main_image {
+
+    background-image: url('../img/home.png');
+    color: white;
+    flex-grow: 1;
 
     &--content {
+        max-width: 600px;
+        line-height: 1.3;
+        padding-left: 4.3%;
+        padding-top: 14.1%;
+        padding-bottom: 16%;
     }
 
-    // .home--title
+    // .main_image--title
 
     &--title {
+        font-family: 'Yeseva One';
+        font-size: 4em;
     }
 
-    // .home--text
+    // .main_image--text
 
     &--text {
+
+        font-size: 2.2em;
+        padding-top: 20px;
+        margin-bottom: 55px;
+
     }
 
-    // .home--left_button
+    // .main_image--left_button
 
     &--left_button {
+
+        padding: 19px 40px;
+        font-size: 1.3em;
+
     }
 
-    // .home--right_button
+    // .main_image--right_button
 
     &--right_button {
+
+        padding: 18px 20px;
+        margin-left: 20px;
+        font-size: 1.3em;
+        background: none !important;
+        border: 1px solid white;
+
     }
+}
 
-    // .home--scroll_down
+.scroll_down {
 
-    &--scroll_down {
-    }
+    position: absolute;
+    background-color: $main-color;
+    bottom: -7%;
+    left: 0;
 
-    // .home--link
+    // .scroll_down--link
 
-    &--link {
-    }
+    &--link {}
 
-    // .home--link_icon
+    // .scroll_down--link_icon
 
-    &--link_icon {
-    }
+    &--link_icon {}
 }

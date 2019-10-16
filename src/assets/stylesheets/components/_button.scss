@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.demi_font-btn {
+
+   color: white;
+   line-height: 35px;
+   background-color: $light-gold;
+   font-family: $futurademic-font;
+   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+   border-radius: 2px;
+
+}
+
+.yeseva_font-btn {
+
+   color: white;
+   background-color: $light-gold;
+   font-family: $yesevaone-font;
+   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
+
+}
