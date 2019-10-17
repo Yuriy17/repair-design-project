@@ -39,6 +39,13 @@ module.exports = {
                 ],
             },
             {
+                test: /\.svg$/, 
+                use: [
+                    'file-loader',
+                ]
+
+            },
+            {
                 test: /\.(woff|woff2|ttf|otf|eot)$/i,
                 use: [{
                     loader: "file-loader",
@@ -56,6 +63,7 @@ module.exports = {
                     }
                 }]
             },
+
         ]
     },
     plugins: [
@@ -74,7 +82,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000,
-        writeToDisk:true,
+        writeToDisk: true,
         open: true //open in chrome
     }
 };

@@ -2,9 +2,16 @@
 
     display: flex;
     justify-content: space-between;
+    
+
     // .navbar--item
 
     &--item {
+
+        display: flex;
+       
+        /* margin-right: 5px; */
+        padding: 0 0.2em; 
 
     }
 
@@ -12,8 +19,9 @@
 
     &--link {
 
-        text-decoration: none;
+        
         color: white;
+
         &:hover {
             color: $light-gold;
         }

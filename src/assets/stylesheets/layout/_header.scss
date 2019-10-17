@@ -33,7 +33,22 @@
     // .header--nav_item
 
     &--nav_item {
+
         width:46.2%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+            
+            width: auto;
+
+        }
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+            
+            display: none;
+
+        }
+
+
     }
 
     // .header--tel_link_item
@@ -43,6 +58,14 @@
         font-family: $futurademic-font;
         color:$light-gold;
         text-decoration: underline;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+            
+            color:white;
+            text-decoration: none;
+
+        }
+        
     }
 
     // .header--request_button_item
@@ -50,6 +73,10 @@
     &--request_button_item {
 
         padding: 0 31px;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+            display: none;
+        }
 
     }
 }
