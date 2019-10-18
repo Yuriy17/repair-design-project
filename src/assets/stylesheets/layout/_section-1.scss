@@ -235,7 +235,8 @@
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
-
+    z-index: 1;
+    
     &:hover {
 
         .scroll_down_link--icon_item use {

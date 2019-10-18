@@ -15,7 +15,7 @@
         <h1 class="header--logo_item">IC "REPAIR DESIGN PROJECT"</h1>
         <nav class="header--nav_item">
           <ul class="navbar">
-            <li class="navbar--item"><a href="#home" class="navbar--link">HOME</a></li>
+            <li class="navbar--item active"><a href="#home" class="navbar--link">HOME</a></li>
             <li class="navbar--item"><a href="#projects" class="navbar--link">PROJECTS</a></li>
             <li class="navbar--item"><a href="#measurement" class="navbar--link">MEASUREMENT</a></li>
             <li class="navbar--item"><a href="#team" class="navbar--link">TEAM</a></li>
@@ -71,61 +71,74 @@
           </a>
         </div>
       </section>
+
       <section id="projects" class="complited_projects">
         <div class="projects_info">
-          <h2 class="projects_info--title">COMPLETED PROJECTS</h2>
-          <span class="projects_info--title_line"></span>
+          <div class="projects_info--title">
+            <h2 class="projects_info--title_text">COMPLETED PROJECTS</h2>
+            <span class="projects_info--title_line"></span>
+          </div>
           <p class="projects_info--text">
             Only a small part of the work performed by our company is presented on the site. For 14 years on in the
             construction market we have made happy more than 1000 families
           </p>
-          <div class="projects_info--table">
-            <div class="projects_info--item">
-              <h4 class="projects_info--item_title">CITY:</h4>
-              <p class="projects_info--item_text">
-                Rostov-on-Don
-                LCD admiral
-              </p>
-            </div>
-            <div class="projects_info--item">
-              <h4 class="projects_info--item_title">APARTMENT AREA:</h4>
-              <p class="projects_info--item_text">81 m2</p>
-            </div>
-            <div class="projects_info--item">
-              <h4 class="projects_info--item_title">REPAIR TIME:</h4>
-              <p class="projects_info--item_text">3.5 months</p>
-            </div>
-            <div class="projects_info--item">
-              <h4 class="projects_info--item_title">REPAIR COST:</h4>
-              <p class="projects_info--item_text">Upon request</p>
-            </div>
-          </div>
-          <div class="circles_arrows">
-
-          </div>
         </div>
-
         <div class="projects_carousel">
           <nav>
-            <ul class="projects_carousel--places">
+            <ul class="projects_carousel--places_list">
               <li class="projects_carousel--places_item">
-                <a class="projects_carousel--places_link">ROSTOV-ON-DON, ADMIRAL</a>
+                <a href="#" class="projects_carousel--places_link active">ROSTOV-ON-DON, ADMIRAL</a>
               </li>
               <li class="projects_carousel--places_item">
-                <a class="projects_carousel--places_link">SOCHI THIEVES</a>
+                <a href="#" class="projects_carousel--places_link">SOCHI THIEVES</a>
               </li>
               <li class="projects_carousel--places_item">
-                <a class="projects_carousel--places_link">ROSTOV-ON-DON PATRIOTIC</a>
+                <a href="#" class="projects_carousel--places_link">ROSTOV-ON-DON PATRIOTIC</a>
               </li>
             </ul>
           </nav>
           <div class="projects_carousel--slider">
-            <img class="projects_carousel--slider_image" src="" alt="">
-            <img class="projects_carousel--slider_image" src="" alt="">
+            <img class="projects_carousel--slider_image" src="./assets/img/slide_1.png" alt="First slide">
+            <img class="projects_carousel--slider_image" src="./assets/img/slide_2.png" alt="Second slide">
             <a class="projects_carousel--slider_button"></a>
           </div>
         </div>
+        <div class="project_table_content">
+          <div class="projects_table">
+            <div class="projects_table--item">
+              <h4 class="projects_table--item_title">CITY:</h4>
+              <p class="projects_table--item_text">
+                Rostov-on-Don
+                LCD admiral
+              </p>
+            </div>
+            <div class="projects_table--item">
+              <h4 class="projects_table--item_title">APARTMENT AREA:</h4>
+              <p class="projects_table--item_text">81 m2</p>
+            </div>
+            <div class="projects_table--item">
+              <h4 class="projects_table--item_title">REPAIR TIME:</h4>
+              <p class="projects_table--item_text">3.5 months</p>
+            </div>
+            <div class="projects_table--item">
+              <h4 class="projects_table--item_title">REPAIR COST:</h4>
+              <p class="projects_table--item_text">Upon request</p>
+            </div>
+          </div>
+          <div class="circles_arrows">
+            <svg class="circles_arrows--arrow_left">
+              <use xlink:href="#arrow-long"></use>
+            </svg>
+            <span class="circles_arrows--circle active"></span>
+            <span class="circles_arrows--circle"></span>
+            <span class="circles_arrows--circle"></span>
+            <svg class="circles_arrows--arrow_right">
+              <use xlink:href="#arrow-long"></use>
+            </svg>
+          </div>
+        </div>
       </section>
+
       <section id="measurement" class="online_control">
         <h2>ONLINE CONTROL</h2>
         <span class="line_icon_camera"></span>

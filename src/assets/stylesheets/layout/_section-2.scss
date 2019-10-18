@@ -1,0 +1,231 @@
+.complited_projects {
+
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: $main-color;
+    padding-left: 7.1%;
+    padding-top: 100px;
+    color: white;
+
+}
+
+.projects_info {
+
+    max-width: 36.8%;
+    display: flex;
+    flex-direction: column;
+
+    // .projects_info--title
+
+    &--title {
+
+        display: flex;
+        width: 51.3434532%;
+        padding-top: 65px;
+
+    }
+
+    // .projects_info--title_text
+
+    &--title_text {
+        font-family: 'Yeseva One';
+        color: $light-gold;
+        font-size: 2.7em;
+        line-height: 37px;
+        width: 62.8458498%;
+    }
+
+    // .projects_info--title_line
+
+    &--title_line {
+        width: 37.1541502%;
+        margin-bottom: 17px;
+        border-bottom: 1px solid $light-gold;
+    }
+
+    // .projects_info--text
+
+    &--text {
+        font-size: 1.8em;
+        line-height: 29px;
+        padding-top: 25px;
+        padding-right: 60px;
+    }
+}
+
+.projects_carousel {
+
+    max-width: 63.1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+
+    // .projects_carousel--places_list
+
+    &--places_list {
+
+        display: flex;
+        width: 73.7278107%;
+        justify-content: space-between;
+
+    }
+
+    // .projects_carousel--places_item
+
+    &--places_item {
+        padding-bottom: 52px;
+    }
+
+    // .projects_carousel--places_link
+
+    &--places_link {
+
+        font-family: 'Yeseva One';
+        font-size: 1.4em;
+        color: #fff;
+        opacity: 0.3;
+        padding-bottom: 6px;
+    }
+
+    
+
+    // active .projects_carousel--places_link
+
+    &--places_link.active {
+        opacity: 1;
+        color: $light-gold;
+        border-bottom: 1px solid $light-gold;
+    }
+
+    // .projects_carousel--slider
+
+    &--slider {
+
+        min-height: 482.38px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+
+    }
+
+    // .projects_carousel--slider_image
+
+    &--slider_image {
+
+        object-fit: cover;
+        margin-right: 20px;
+
+    }
+
+    // .projects_carousel--slider_button
+
+    &--slider_button {
+
+        background: $light-gold;
+        width:54.72px;
+        height: 54.72px;
+        border-radius: 50%;
+        z-index: 1;
+        position: absolute;
+        right: 5.3310145%;
+        top: 49.594%;
+    }
+}
+
+
+.project_table_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 26.2%;
+    justify-content: stretch;
+    position: absolute;
+    left: inherit;
+    top: 396px;
+}
+
+.projects_table {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    // .projects_table--item
+
+    &--item {
+
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 38px;
+
+    }
+
+    // .projects_table--item_title
+
+    &--item_title {
+
+        color: $light-gold;
+        font-family: 'Yeseva One';
+        font-size: 1.8em;
+
+    }
+
+    // .projects_table--item_text
+
+    &--item_text {
+
+        font-size: 1.5em;
+        padding-top: 11px;
+        max-width: 87px;
+        line-height: 20px;
+
+    }
+}
+
+.circles_arrows {
+    // .projects_table--circles_arrows
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 205.68px;
+    max-height: 13.28px;
+    padding-top: 48px;
+
+    // .projects_table--arrow_left
+
+    &--arrow_left {
+
+        transform: rotate(180deg);
+        max-width: 44px;
+
+    }
+
+    // .projects_table--circle
+
+    &--circle {
+
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        width: 9.57px;
+        height: 9.57px;
+
+    }
+
+    // active .projects_table--circle
+
+    &--circle.active {
+        background: #fff!important;
+    }
+
+
+    // .projects_table--arrow_right
+
+    &--arrow_right {
+
+        max-width: 44px;
+
+    }
+}
