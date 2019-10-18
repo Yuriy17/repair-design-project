@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const path = require('path');
 
 module.exports = {
@@ -38,19 +39,32 @@ module.exports = {
                     'sass-loader',
                 ],
             },
-            {
+/*             {
                 test: /\.svg$/, 
-                use: [
-                    'file-loader',
-                ]
-
-            },
-            {
-                test: /\.(woff|woff2|ttf|otf|eot)$/i,
+                loader: 'svg-sprite-loader',
+                options: {
+                  extract: true,
+                  spriteFilename: './assets/icons/icons.svg', 
+                }
+            }, */
+/*             {
+                test: /\.svg$/, 
                 use: [{
                     loader: "file-loader",
                     options: {
-                        outputPath: "assets/fonts"
+                        outputPath: "assets/icons",
+                        name: '[name].[ext]',
+                    }
+                }]
+
+            },  */
+            {
+                test: /\.(woff|woff2|ttf|otf|eot)$/i,
+                use: [{
+                    loader: "file-loader?name=[name].[ext]",
+                    options: {
+                        outputPath: "assets/fonts",
+                        name: '[name].[ext]',
                     }
                 }]
             },
@@ -59,7 +73,8 @@ module.exports = {
                 use: [{
                     loader: "file-loader",
                     options: {
-                        outputPath: "assets/img"
+                        outputPath: "assets/img",
+                        name: '[name].[ext]',
                     }
                 }]
             },
@@ -76,6 +91,9 @@ module.exports = {
             chunkFilename: '[id]'
         }),
         new CleanWebpackPlugin(),
+        new SpriteLoaderPlugin({
+            plainSprite: true
+          }),
     ],
     devServer: {
         index: 'index.html',
