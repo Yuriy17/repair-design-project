@@ -66,6 +66,12 @@
         padding-top: 14.1%;
         padding-bottom: 16%;
 
+        @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+            padding-top: 21.1%;
+
+        }
+
     }
 
     // .main_image--title
@@ -75,26 +81,26 @@
         font-family: 'Yeseva One';
         font-size: 4em;
 
-
-        @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
 
             font-size: 3em;
 
         }
 
-        @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
+        @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
             font-size: 2.6em;
 
-
         }
 
-        @media screen and (max-width: map-get($map: $breakpoints, $key: small)) {
+        @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
 
             font-size: 2.3em;
-            padding-right: 1.2em;
+            padding-right: 4%;
 
         }
+
+
     }
 
     // .main_image--text
@@ -132,6 +138,7 @@
         @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
             font-size: 2em;
+            margin-bottom: 28px;
 
         }
 
@@ -184,9 +191,6 @@
 
             margin-right: 20px;
             margin-top: 20px;
-        }
-
-        @media screen and (max-width: map-get($map: $breakpoints, $key: small)) {
 
             span.mobile {
 
@@ -201,6 +205,7 @@
             }
 
         }
+
 
     }
 }
