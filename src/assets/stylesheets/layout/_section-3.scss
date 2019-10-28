@@ -1,7 +1,8 @@
-/* linear-gradient(to bottom, #000 0%, #000 500px, #fff 500px, #fff 100%); */
-.measurement{
+.measurement {
     display: flex;
     justify-content: center;
+    background: linear-gradient(to bottom, $main-color 0%, $main-color 50%, #fff 50%, #fff 100%);
+    padding-top: 6.5%;
 
 }
 
@@ -9,98 +10,162 @@
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    color: black;
-    max-width: 837px;
+    color: #363636;
+    max-width: 818px;
 
     // .online_control--title
 
     &--title {
-        flex-grow:1;
-        justify-content:center;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
         font-family: 'Yeseva One';
         color: white;
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     // .online_control--line_icon_camera
 
     &--line_icon_camera {
-        flex-grow:1;
-        justify-content:center;
+        flex-grow: 1;
+        justify-content: center;
         height: 28px;
+        margin-top: 2%;
+        margin-bottom: 3.9%;
     }
 
     // .online_control--online_control_video
 
     &--online_control_video {
-        flex-grow:1;
+        flex-grow: 1;
 
-        min-height: 434px;
-        iframe{
+        min-height: 433px;
+
+        iframe {
             width: 100%;
-            height: 100%; 
+            height: 100%;
         }
+
         /* justify-content:center; */
     }
 
     // .online_control--online_control_line
 
     &--online_control_line {
-        flex-grow:1;
-        justify-content:center;
-        width: 51px;
+        flex-grow: 1;
+        justify-content: center;
+        width: 56px;
         height: 10px;
         border-bottom: 1.54px solid $light-gold;
+        margin-top: 6.6%;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     // .online_control--online_control_text
 
     &--online_control_text {
-        flex-grow:1;
-        justify-content:center;
-        font-size: 2em;
+        flex-grow: 1;
+        justify-content: center;
+        font-size: 2rem;
         line-height: 34px;
+        margin-top: 3.2%;
+        padding: 0 68px;
+        text-align: center;
     }
 
     // .online_control--personal_data_form
 
     &--personal_data_form {
-        flex-grow:1;
-        justify-content:center;
+        flex-grow: 1;
         display: flex;
         flex-wrap: wrap;
         justify-content: stretch;
+        margin-top: 12%;
+    }
+
+    // .online_control--input
+
+    &--input {
+        border: 0;
+        border-bottom: 1.5px solid #9c9c9c;
+        width: 80%;
+        padding-bottom: 2.3%;
+        font-size: 1.8rem;
+        font-family: $futurabookc-font;
+    }
+
+    &--input::placeholder {
+        opacity: 1;
+        color: #363636;
     }
 
     // .online_control--input_name
 
+    &--input_label {
+        width: 80%;
+        color: #9c9c9c;
+        font-size: 1.5rem;
+    }
+
+
+    // .online_control--input_name
+
     &--input_name {
-        flex-grow:1;
-        justify-content:center;
+        width: 34.89%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     // .online_control--input_number
 
     &--input_number {
-        flex-grow:1;
-        justify-content:center;
+        width: 34.89%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     // .online_control--submit_button
 
     &--submit_button {
-        flex-grow:1;
-        justify-content:center;
+        width: 30.22%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    // .online_control--button
+
+    &--button {
+        width: 82%;
+        font-size: 1.5rem;
     }
 
     // .online_control--input_checkbox
 
     &--input_checkbox {
-        flex-grow:1;
-        justify-content:center;
 
         // .online_control--input_checkbox-activated
 
         &-activated {}
+    }
+
+    // .online_control--checkbox
+
+    &--checkbox {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &--checkbox_label {
+
     }
 }

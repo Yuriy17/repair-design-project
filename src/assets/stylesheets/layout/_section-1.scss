@@ -10,8 +10,8 @@
 
     // .aside_instagram--vertical_link
     background-color: $main-color;
-    color: $light-gold;
-    font-size: 1.4em;
+    
+    font-size: 1.4rem;
     padding: 0 4px;
     display: flex;
     font-family: $futurademic-font;
@@ -24,8 +24,16 @@
 
     &--vertical_link {
         display: flex;
+        color: $light-gold;
         flex-direction: column;
         justify-content: center;
+    }
+
+    &--vertical_link:hover {
+        color: white;
+        .aside_instagram--vertical_link_line {
+            border-left: 2px solid white;
+        }
     }
 
     // .aside_instagram--vertical_link_text
@@ -79,23 +87,23 @@
     &--title {
 
         font-family: 'Yeseva One';
-        font-size: 4em;
+        font-size: 4rem;
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
 
-            font-size: 3em;
+            font-size: 3rem;
 
         }
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
-            font-size: 2.6em;
+            font-size: 2.6rem;
 
         }
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
 
-            font-size: 2.3em;
+            font-size: 2.3rem;
             padding-right: 4%;
 
         }
@@ -107,7 +115,7 @@
 
     &--text {
 
-        font-size: 2.2em;
+        font-size: 2.2rem;
         padding-top: 20px;
         margin-bottom: 48px;
 
@@ -119,7 +127,7 @@
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
 
-            font-size: 1.8em;
+            font-size: 1.8rem;
 
             span.desktop {
 
@@ -137,7 +145,7 @@
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
-            font-size: 2em;
+            font-size: 2rem;
             margin-bottom: 28px;
 
         }
@@ -163,7 +171,7 @@
     &--left_button {
 
         padding: 7px 41px;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         margin-right: 20px;
         display: flex;
         justify-content: center;
@@ -175,7 +183,7 @@
     &--right_button {
 
         padding: 6px 21px;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         background: none !important;
         border: 1px solid white;
         display: flex;
@@ -217,7 +225,7 @@
     display: flex;
     background-color: $main-color;
     font-family: 'Yeseva One';
-    font-size: 1.4em;
+    font-size: 1.4rem;
     color: white;
     bottom: -5.2%;
     left: 0;

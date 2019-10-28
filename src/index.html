@@ -15,7 +15,7 @@
         <h1 class="header--logo_item">IC "REPAIR DESIGN PROJECT"</h1>
         <nav class="header--nav_item">
           <ul class="navbar">
-            <li class="navbar--item active"><a href="#home" class="navbar--link">HOME</a></li>
+            <li class="navbar--item"><a href="#home" class="navbar--link active">HOME</a></li>
             <li class="navbar--item"><a href="#projects" class="navbar--link">PROJECTS</a></li>
             <li class="navbar--item"><a href="#measurement" class="navbar--link">MEASUREMENT</a></li>
             <li class="navbar--item"><a href="#team" class="navbar--link">TEAM</a></li>
@@ -24,13 +24,13 @@
           </ul>
         </nav>
         <a href="#" class="header--tel_link_item">+7 (928) 768-32-39</a>
-        <a class="header--request_button_item demi_font-btn">REQUEST A CALL</a>
+        <a href="#" class="header--request_button_item demi_font-btn">REQUEST A CALL</a>
       </div>
     </header>
     <main>
       <section id="home" class="home">
         <aside class="aside_instagram">
-          <a class="aside_instagram--vertical_link">
+          <a href="#" class="aside_instagram--vertical_link">
             <span class="aside_instagram--vertical_link_text">INSTAGRAM</span>
             <span class="aside_instagram--vertical_link_line"></span>
           </a>
@@ -48,10 +48,10 @@
               cost of materials due to the organization of work
             </p>
             <div class="main_image--buttons">
-              <a class="main_image--left_button demi_font-btn">
+              <a href="#" class="main_image--left_button demi_font-btn">
                 CALCULATE THE COST
               </a>
-              <a class="main_image--right_button demi_font-btn">
+              <a href="#" class="main_image--right_button demi_font-btn">
                 <span class="desktop">
                   SUBMIT YOUR APPLICATION
                 </span>
@@ -177,12 +177,27 @@
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <span class="online_control--online_control_line"> </span>
-          <p class="online_control--online_control_text"></p>
+          <p class="online_control--online_control_text">
+            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+ Leave a request below and you will receive a link to the broadcast.
+          </p>
           <form class="online_control--personal_data_form">
-            <input class="online_control--input_name" type="text">
-            <input class="online_control--input_number" type="text">
-            <button class="online_control--submit_button"></button>
-            <input class="online_control--input_checkbox-activated" type="checkbox" name="" id="">
+            <div class="online_control--input_name">
+              <label class="online_control--input_label" for="name">Name</label>
+              <input id="name" class="online_control--input" type="text" placeholder="What is your name:">
+            </div>
+            <div class="online_control--input_number">
+              <label class="online_control--input_label" for="number">Phone</label>
+              <input id="number" class="online_control--input" type="text" placeholder="Your phone number:">
+            </div>
+            <div class="online_control--submit_button">
+              <button class="online_control--button demi_font-btn">SUBMIT</button>
+            </div>
+            <div class="online_control--checkbox">
+              <input id="checkbox" class="online_control--input_checkbox online_control--input_checkbox-activated" type="checkbox" name="" id="">
+              <label for="checkbox"  class="online_control--checkbox_label">I agree to the processing of personal data</label>
+              <span class="online_control--checkmark"></span>
+            </div>
           </form>
         </div>
       </section>
