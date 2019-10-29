@@ -193,17 +193,23 @@
             <div class="online_control--submit_button">
               <button class="online_control--button demi_font-btn">SUBMIT</button>
             </div>
-            <div class="online_control--checkbox">
-              <input id="checkbox" class="online_control--input_checkbox online_control--input_checkbox-activated" type="checkbox" name="" id="">
+            <!-- <div class="online_control--checkbox"> -->
+<!--               <input id="checkbox" class="online_control--input_checkbox online_control--input_checkbox-activated" type="checkbox" name="" id="">
               <label for="checkbox"  class="online_control--checkbox_label">I agree to the processing of personal data</label>
-              <span class="online_control--checkmark"></span>
-            </div>
+              <span class="online_control--checkmark"></span> -->
+              <label  class="online_control--checkbox_label">
+              <input id="checkbox" type="checkbox" >
+              <span class="online_control--checkmark"></span>I agree to the processing of personal data
+            </label>
+            <!-- </div> -->
           </form>
         </div>
       </section>
       <section class="types_of_repair">
         <h2 class="types_of_repair_title">TYPES OF REPAIR</h2>
-        <span class="line_icon_tools"></span>
+        <svg class="line_icon_tools">
+          <use xlink:href="#hammer"></use>
+        </svg>
         <div class="repair_types">
           <div class="repair_types--redecorating_view">
             <div class="repair_types--content">

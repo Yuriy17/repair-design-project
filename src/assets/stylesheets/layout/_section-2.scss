@@ -46,6 +46,7 @@
     @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
         padding-right: 0;
+        padding-top: 0;
 
     }
 
@@ -200,24 +201,26 @@
 
         min-height: 482.38px;
         display: flex;
-        /* flex-wrap: nowrap; */
         overflow: hidden;
 
-        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+/*         @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
 
-            /* max-width: 680px; */
-            
             min-height: 340px;
+
+
+        } */
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+            
+            min-height: 241.55px;
+            max-height: 340px;
 
 
         }
 
-        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
-
-            /* max-width: 680px; */
+        @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
             
-            min-height: 241.55px;
-
+            max-height: 241.55px;
 
         }
         
@@ -237,11 +240,16 @@
             overflow: hidden;
             margin: 0 auto;
             
-            width: 340px;
+            width: 540px;
             
     
-        }  
+        }
 
+        @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+                  
+            width: 340px;
+    
+        }
     }
 
     // .projects_carousel--slider_image
@@ -287,6 +295,7 @@
 
     &--slider_button_right_arrow {
         height: 38%;
+        padding-left: 8%;
     }
 
     &--slider_button_left {
@@ -326,6 +335,7 @@
             display:inline;
             height: 38%;
             transform: rotate(180deg);
+            padding-left: 6%;
     
         }  
 
