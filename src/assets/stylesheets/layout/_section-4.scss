@@ -1,63 +1,120 @@
 .types_of_repair {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
 .types_of_repair_title {
-    display: flex;
-    margin-top: 10.4%;
-    flex-grow: 1;
-    justify-content: center;
-    font-family: 'Yeseva One';
-    font-size: 2rem;
+	display: flex;
+	margin-top: 10.4%;
+
+	justify-content: center;
+	font-family: 'Yeseva One';
+	font-size: 2rem;
 }
+
 .line_icon_tools {
-    flex-grow: 1;
-    justify-content: center;
-    height: 28px;
-    margin-top: 1.1%;
+
+	justify-content: center;
+	height: 28px;
+	margin-top: 1.1%;
 }
+
 .repair_types {
 
-		// .repair_types--redecorating_view
+	flex-grow: 1;
+	justify-content: center;
+	display: flex;
+	width: 85.8333333%;
+	margin-top: 2.2%;
 
-		&--redecorating_view {
-		}
+	// .repair_types--redecorating_view
 
-		// .repair_types--content
+	&--redecorating_view {
 
-		&--content {
-		}
+		display: flex;
+		justify-content: center;
 
-		// .repair_types--list
+		width: calc(100%/3);
+		background-image: url('./../img/types_repair_1.png');
+		object-fit: cover;
+		background-repeat: no-repeat;
+		margin-right: 2.5%;
 
-		&--list {
-		}
+	}
 
-		// .repair_types--item
+	// .repair_types--overhaul_view
 
-		&--item {
-		}
+	&--overhaul_view {
 
-		// .repair_types--button
+		display: flex;
+		justify-content: center;
 
-		&--button {
-		}
+		width: calc(100%/3);
+		background-image: url('./../img/types_repair_2.png');
+		object-fit: cover;
+		background-repeat: no-repeat;
+		margin-right: 2.5%;
 
-		// .repair_types--overhaul_view
+	}
 
-		&--overhaul_view {
-		}
+	// .repair_types--designer_repair_view
 
-		// .repair_types--designer_repair_view
+	&--designer_repair_view {
 
-		&--designer_repair_view {
-		}
-}
-.price_img {
+		display: flex;
+		justify-content: center;
 
-		// .price_img--title
+		width: calc(100%/3);
+		background-image: url('./../img/types_repair_3.png');
+		object-fit: cover;
+		background-repeat: no-repeat;
 
-		&--title {
-		}
+	}
+
+	// .repair_types--content
+
+	&--content {
+		width: 84%;
+		background-color: white;
+		margin-top: 75%;
+		padding-top: 6.8%;
+		-webkit-box-shadow: 9px 9px 19px -11px rgba(0,0,0,0.75);
+		-moz-box-shadow: 9px 9px 19px -11px rgba(0,0,0,0.75);
+		box-shadow: 9px 9px 19px -11px rgba(0,0,0,0.75);
+
+	}
+
+	&--title {
+
+		font-family: 'Yeseva One';
+
+		font-size: 1.8rem;
+		padding-left: 9.8%;
+
+	}
+
+	// .repair_types--list
+
+	&--list {
+		list-style-type: disc;
+		padding-left: 14%;
+		padding-top: 3.1%;
+		margin-bottom: 15%;
+	}
+
+	// .repair_types--item
+
+	&--item {
+		font-size: 1.5rem;
+		color: #959595;
+		line-height: 25px;
+	}
+
+	// .repair_types--button
+
+	&--button {
+		font-size: 1.8rem;
+		padding: 5% 6%;
+	}
 }
