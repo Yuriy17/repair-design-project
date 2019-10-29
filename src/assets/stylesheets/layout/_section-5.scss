@@ -1,0 +1,98 @@
+.measuring_consultation {
+    display: flex;
+    margin-top: 13.7%;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        margin-top: 30%;
+
+    }
+}
+
+.circle_of_advanteges {
+
+    width: calc(100%*835/1440);
+
+    
+
+    // .circle_of_advanteges--circle
+
+    &--circle {
+        width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: 
+       linear-gradient(#fff,#fff) padding-box,
+       linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+    border: 3px solid transparent;
+    margin-left: -15%;
+}
+    }
+
+        // .circle_of_advanteges--list
+
+        &--list {}
+
+    // .circle_of_advanteges--item
+
+    &--item {}
+
+    // .circle_of_advanteges--text
+
+    &--text {}
+}
+
+.request {
+    width: calc(100%*506/1440);
+}
+
+.request_form {
+
+    // .request_form--title
+
+    &--title {}
+
+    // .request_form--input_name
+
+    &--input_name {}
+
+    // .request_form--input_number
+
+    &--input_number {}
+
+    // .request_form--input_email
+
+    &--input_email {}
+
+    // .request_form--checkbox_label
+
+    &--checkbox_label {}
+
+    // .request_form--checkbox
+
+    &--checkbox {
+
+        // .request_form--checkbox-activated
+
+        &-activated {}
+    }
+
+    // .request_form--submit_button
+
+    &--submit_button {}
+}
+
+.request_info {
+
+    // .request_info--helpsave
+
+    &--helpsave {}
+
+    // .request_info--image
+
+    &--image {}
+
+    // .request_info--save_help_text
+
+    &--save_help_text {}
+}
