@@ -112,22 +112,6 @@
                 <use xlink:href="#arrow"></use>
               </svg>
             </a>
-            <!--             <div id="projects_carousel_content" class="projects_carousel--content">
-              <img class="projects_carousel--slider_image" src="./assets/img/slide_1.png" alt="First slide">
-              <img class="projects_carousel--slider_image" src="./assets/img/slide_2.png" alt="Second slide">
-            </div>
-            <div id="projects_carousel_buttons" class="projects_carousel--buttons">
-              <a class="projects_carousel--slider_button_right">
-                <svg class="projects_carousel--slider_button_right_arrow">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </a>
-              <a class="projects_carousel--slider_button_left">
-                <svg class="projects_carousel--slider_button_left_arrow">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </a>
-            </div> -->
           </div>
         </div>
         <div class="project_table_content">
@@ -178,8 +162,10 @@
           </div>
           <span class="online_control--online_control_line"> </span>
           <p class="online_control--online_control_text">
-            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
- Leave a request below and you will receive a link to the broadcast.
+            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
+            can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
+            from one of our facilities!
+            Leave a request below and you will receive a link to the broadcast.
           </p>
           <form class="online_control--personal_data_form">
             <div class="online_control--input_name">
@@ -193,15 +179,10 @@
             <div class="online_control--submit_button">
               <button class="online_control--button demi_font-btn">SUBMIT</button>
             </div>
-            <!-- <div class="online_control--checkbox"> -->
-<!--               <input id="checkbox" class="online_control--input_checkbox online_control--input_checkbox-activated" type="checkbox" name="" id="">
-              <label for="checkbox"  class="online_control--checkbox_label">I agree to the processing of personal data</label>
-              <span class="online_control--checkmark"></span> -->
-              <label  class="online_control--checkbox_label">
-              <input id="checkbox" type="checkbox" >
+            <label class="online_control--checkbox_label">
+              <input id="checkbox" type="checkbox">
               <span class="online_control--checkmark"></span>I agree to the processing of personal data
             </label>
-            <!-- </div> -->
           </form>
         </div>
       </section>
@@ -260,7 +241,7 @@
       </section>
       <section id="reviews" class="measuring_consultation">
         <div class="circle_of_advanteges">
-            <div class="circle_of_advanteges--circle"></div>
+          <div class="circle_of_advanteges--circle"></div>
           <ul class="circle_of_advanteges--list">
             <li class="circle_of_advanteges--item">
               <p class="circle_of_advanteges--text">
@@ -280,7 +261,7 @@
             </li>
             <li class="circle_of_advanteges--item">
               <p class="circle_of_advanteges--text">
-                Get a cost estimate and
+                Get a cost estimate and <br>
                 the timing of your future repairs
               </p>
             </li>
@@ -292,18 +273,37 @@
               Leave a request for free
               departure of the measurer
             </h5>
-            <input class="request_form--input_name" placeholder="What is your name:" type="text">
-            <input class="request_form--input_number" placeholder="Your phone number:" type="text">
-            <input class="request_form--input_email" placeholder="Your email" type="text">
+            <div class="request_form--name request_form--input_block">
+              <label for="request_name" class="request_form--input_label">Name</label>
+              <input id="request_name" class="request_form--input_name request_form--input"
+                placeholder="What is your name:" type="text">
+            </div>
+            <div class="request_form--number request_form--input_block">
+              <label for="request_input" class="request_form--input_label">Phone</label>
+              <input id="request_input" class="request_form--input_number request_form--input"
+                placeholder="Your phone number:" type="text">
+            </div>
+            <div class="request_form--email request_form--input_block">
+              <label for="request_email" class="request_form--input_label">Email</label>
+              <input id="request_email" class="request_form--input_email request_form--input" placeholder="Your email"
+                type="text">
+            </div>
             <label class="request_form--checkbox_label">
-              <input class="request_form--checkbox-activated" type="checkbox">
-              I agree to the processing of personal data
+              <input id="checkbox_2" type="checkbox">
+              <span class="request_form--checkmark"></span>I agree to the processing of personal data
             </label>
-            <button class="request_form--submit_button" type="submit"></button>
+            <button class="request_form--submit_button demi_font-btn" type="submit">CALL THE MEASURER</button>
           </form>
-          <div class="request_info--helpsave">
-            <img class="request_info--image" src="" alt="">
-            <p class="request_info--save_help_text"></p>
+          <div class="request_info">
+            <div class="request_info--piggy_image">
+              <svg class="request_info--piggy_svg">
+                <use xlink:href="#piggy"></use>
+              </svg>
+            </div>
+            <p class="request_info--save_help_text">
+              Help save 10 - 20% of the <br>
+              cost of materials
+            </p>
           </div>
         </div>
       </section>

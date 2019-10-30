@@ -316,7 +316,7 @@
     }
 
     &--checkbox_label input:checked~.online_control--checkmark {
-        background-color: #E3B873;
+        background-color: $light-gold;
     }
 
     &--checkmark:after {

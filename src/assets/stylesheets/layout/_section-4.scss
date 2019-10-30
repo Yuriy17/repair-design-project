@@ -9,7 +9,7 @@
 	margin-top: 10.4%;
 
 	justify-content: center;
-	font-family: 'Yeseva One';
+	font-family: $yesevaone-font;
 	font-size: 2rem;
 
 	@media screen and (max-width: map-get($map: $breakpoints, $key: large)) {

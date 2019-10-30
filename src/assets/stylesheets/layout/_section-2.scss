@@ -14,13 +14,10 @@
         flex-direction: column;
         justify-content: stretch;
         
-
-
     }
 
     @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
             
-        /* padding-right: 7.1%; */
         padding: 9% 0 0 0 ;
 
     }  

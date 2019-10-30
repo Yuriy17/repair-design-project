@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-</head>
+<link href="main.css" rel="stylesheet"></head>
 
 <body>
   <div class="page-wrapper">
@@ -112,22 +112,6 @@
                 <use xlink:href="#arrow"></use>
               </svg>
             </a>
-            <!--             <div id="projects_carousel_content" class="projects_carousel--content">
-              <img class="projects_carousel--slider_image" src="assets/img/slide_1.png" alt="First slide">
-              <img class="projects_carousel--slider_image" src="assets/img/slide_2.png" alt="Second slide">
-            </div>
-            <div id="projects_carousel_buttons" class="projects_carousel--buttons">
-              <a class="projects_carousel--slider_button_right">
-                <svg class="projects_carousel--slider_button_right_arrow">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </a>
-              <a class="projects_carousel--slider_button_left">
-                <svg class="projects_carousel--slider_button_left_arrow">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </a>
-            </div> -->
           </div>
         </div>
         <div class="project_table_content">
@@ -178,8 +162,10 @@
           </div>
           <span class="online_control--online_control_line"> </span>
           <p class="online_control--online_control_text">
-            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
- Leave a request below and you will receive a link to the broadcast.
+            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
+            can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
+            from one of our facilities!
+            Leave a request below and you will receive a link to the broadcast.
           </p>
           <form class="online_control--personal_data_form">
             <div class="online_control--input_name">
@@ -193,15 +179,10 @@
             <div class="online_control--submit_button">
               <button class="online_control--button demi_font-btn">SUBMIT</button>
             </div>
-            <!-- <div class="online_control--checkbox"> -->
-<!--               <input id="checkbox" class="online_control--input_checkbox online_control--input_checkbox-activated" type="checkbox" name="" id="">
-              <label for="checkbox"  class="online_control--checkbox_label">I agree to the processing of personal data</label>
-              <span class="online_control--checkmark"></span> -->
-              <label  class="online_control--checkbox_label">
-              <input id="checkbox" type="checkbox" >
+            <label class="online_control--checkbox_label">
+              <input id="checkbox" type="checkbox">
               <span class="online_control--checkmark"></span>I agree to the processing of personal data
             </label>
-            <!-- </div> -->
           </form>
         </div>
       </section>
@@ -260,7 +241,7 @@
       </section>
       <section id="reviews" class="measuring_consultation">
         <div class="circle_of_advanteges">
-            <div class="circle_of_advanteges--circle"></div>
+          <div class="circle_of_advanteges--circle"></div>
           <ul class="circle_of_advanteges--list">
             <li class="circle_of_advanteges--item">
               <p class="circle_of_advanteges--text">
@@ -280,7 +261,7 @@
             </li>
             <li class="circle_of_advanteges--item">
               <p class="circle_of_advanteges--text">
-                Get a cost estimate and
+                Get a cost estimate and <br>
                 the timing of your future repairs
               </p>
             </li>
@@ -292,18 +273,37 @@
               Leave a request for free
               departure of the measurer
             </h5>
-            <input class="request_form--input_name" placeholder="What is your name:" type="text">
-            <input class="request_form--input_number" placeholder="Your phone number:" type="text">
-            <input class="request_form--input_email" placeholder="Your email" type="text">
+            <div class="request_form--name request_form--input_block">
+              <label for="request_name" class="request_form--input_label">Name</label>
+              <input id="request_name" class="request_form--input_name request_form--input"
+                placeholder="What is your name:" type="text">
+            </div>
+            <div class="request_form--number request_form--input_block">
+              <label for="request_input" class="request_form--input_label">Phone</label>
+              <input id="request_input" class="request_form--input_number request_form--input"
+                placeholder="Your phone number:" type="text">
+            </div>
+            <div class="request_form--email request_form--input_block">
+              <label for="request_email" class="request_form--input_label">Email</label>
+              <input id="request_email" class="request_form--input_email request_form--input" placeholder="Your email"
+                type="text">
+            </div>
             <label class="request_form--checkbox_label">
-              <input class="request_form--checkbox-activated" type="checkbox">
-              I agree to the processing of personal data
+              <input id="checkbox_2" type="checkbox">
+              <span class="request_form--checkmark"></span>I agree to the processing of personal data
             </label>
-            <button class="request_form--submit_button" type="submit"></button>
+            <button class="request_form--submit_button demi_font-btn" type="submit">CALL THE MEASURER</button>
           </form>
-          <div class="request_info--helpsave">
-            <img class="request_info--image" src="xxxHTMLLINKxxx0.496805798470345340.40142041823684194xxx" alt="">
-            <p class="request_info--save_help_text"></p>
+          <div class="request_info">
+            <div class="request_info--piggy_image">
+              <svg class="request_info--piggy_svg">
+                <use xlink:href="#piggy"></use>
+              </svg>
+            </div>
+            <p class="request_info--save_help_text">
+              Help save 10 - 20% of the <br>
+              cost of materials
+            </p>
           </div>
         </div>
       </section>
@@ -330,10 +330,10 @@
           </nav>
         </div>
         <div class="ideas_pictures">
-          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.96317101596093970.5695599459592422xxx" alt="">
-          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.59495147262825410.47601876081422345xxx" alt="">
-          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.124815180048537310.1618629122914581xxx" alt="">
-          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.195800092800068050.7021712493399366xxx" alt="">
+          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.92816748827324020.9230910906619054xxx" alt="">
+          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.58270449522635140.3090225142050722xxx" alt="">
+          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.39110927237032890.39915427402708503xxx" alt="">
+          <img class="ideas_pictures--image" src="xxxHTMLLINKxxx0.51686458888020950.7448965758659287xxx" alt="">
         </div>
       </section>
       <section class="design_project">
@@ -468,7 +468,7 @@
               </p>
             </li>
           </ul>
-          <img class="steps_image" src="xxxHTMLLINKxxx0.210051576056218270.8665063578583343xxx" alt="">
+          <img class="steps_image" src="xxxHTMLLINKxxx0.69713824107346340.35545871862740097xxx" alt="">
         </div>
       </section>
       <section id="team" class="team">
@@ -480,7 +480,7 @@
         </p>
         <div class="team_photos">
           <div class="team_photos--card">
-            <img src="xxxHTMLLINKxxx0.422070038870656860.05115069550371687xxx" alt="" class="team_photos--image">
+            <img src="xxxHTMLLINKxxx0.93036106156851450.1924156821459031xxx" alt="" class="team_photos--image">
             <div class="team_photos--badge">
               <div class="team_photos--badge_name">
                 <h3 class="team_photos--badge_name">Dmitry tulyakov</h3>
@@ -490,7 +490,7 @@
             </div>
           </div>
           <div class="team_photos--card">
-            <img src="xxxHTMLLINKxxx0.21088576793061510.2625959360936876xxx" alt="" class="team_photos--image">
+            <img src="xxxHTMLLINKxxx0.70386748000650750.3922220232791005xxx" alt="" class="team_photos--image">
             <div class="team_photos--badge">
               <div class="team_photos--badge_name">
                 <h3 class="team_photos--badge_name">Larisa Kotlyarova</h3>
@@ -500,7 +500,7 @@
             </div>
           </div>
           <div class="team_photos--card">
-            <img src="xxxHTMLLINKxxx0.092920730144442130.15648195459700087xxx" alt="" class="team_photos--image">
+            <img src="xxxHTMLLINKxxx0.96344497990185720.11414790693704346xxx" alt="" class="team_photos--image">
             <div class="team_photos--badge">
               <div class="team_photos--badge_name">
                 <h3 class="team_photos--badge_name">Alexey Efimov</h3>
@@ -530,7 +530,7 @@
         <div class="clients_feedback">
           <div class="client">
             <div class="client--name_item">
-              <img src="xxxHTMLLINKxxx0.477308701016355250.9744053844172815xxx" alt="" class="client--image">
+              <img src="xxxHTMLLINKxxx0.323106287375535260.8750817051205217xxx" alt="" class="client--image">
               <h4 class="client--name">
                 Fedosova Maria Konstantinovna
               </h4>
@@ -559,7 +559,7 @@
           </div>
           <div class="client">
             <div class="client--name_item">
-              <img src="xxxHTMLLINKxxx0.63487171057105350.3078222733256617xxx" alt="" class="client--image">
+              <img src="xxxHTMLLINKxxx0.472048786402730740.8392795969310705xxx" alt="" class="client--image">
               <h4 class="client--name">
                 Afanasyev Sergey Alexandrovich
               </h4>
@@ -586,7 +586,7 @@
           </div>
           <div class="client">
             <div class="client--name_item">
-              <img src="xxxHTMLLINKxxx0.77244898227268140.5556424589069642xxx" alt="" class="client--image">
+              <img src="xxxHTMLLINKxxx0.39652695024988340.1426005207171852xxx" alt="" class="client--image">
               <h4 class="client--name">
                 Kiriev Egor Leonidovich
               </h4>
@@ -632,7 +632,7 @@
             <span class="adress_icons--link_icon"></span>
           </a>
         </div>
-        <img src="xxxHTMLLINKxxx0.99520772268233080.5513099543287514xxx" alt="" class="map">
+        <img src="xxxHTMLLINKxxx0.230450931037372350.6227489731828539xxx" alt="" class="map">
       </section>
     </main>
     <footer>

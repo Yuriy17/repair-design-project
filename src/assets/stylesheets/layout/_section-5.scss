@@ -1,6 +1,6 @@
 .measuring_consultation {
     display: flex;
-    margin-top: 13.7%;
+    margin-top: 9.6%;
 
     @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
 
@@ -11,31 +11,94 @@
 
 .circle_of_advanteges {
 
-    width: calc(100%*835/1440);
+    /* width: calc(100%*835/1440); */
+    min-width: 835px;
+    position: relative;
+    background-image: url('./../img/circle_background.png');
+    background-repeat: no-repeat;
 
-    
+
 
     // .circle_of_advanteges--circle
 
     &--circle {
         width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background: 
-       linear-gradient(#fff,#fff) padding-box,
-       linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
-    border: 3px solid transparent;
-    margin-left: -15%;
-}
+        height: 600px;
+        border-radius: 50%;
+        /*  background:
+            linear-gradient(#fff, #fff) padding-box,
+            linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box; */
+        border: 3px solid $light-gold;
+        margin-left: -17%;
+        padding-bottom: 3.8%;
+        position: relative;
+        bottom: -9%;
+        padding-right: 2%;
+
     }
 
-        // .circle_of_advanteges--list
+    // .circle_of_advanteges--list
 
-        &--list {}
+    &--list {
+        color: $main-color;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 19%;
+        left: 49%;
+        counter-reset: my-awesome-counter;
+        list-style: none;
+        top: 17%;
+
+    }
+
+    &--item:nth-child(1) {
+        margin-bottom: 18%;
+        width: 90%;
+    }
+
+    &--item:nth-child(2) {
+        margin-bottom: 31%;
+        margin-left: 17%;
+        padding-top: 10px;
+    }
+
+    &--item:nth-child(3) {
+        margin-bottom: 31%;
+        margin-left: 23%;
+        padding-top: 10px;
+    }
+
+    &--item:nth-child(4) {
+        margin-left: 7%;
+    }
+
 
     // .circle_of_advanteges--item
 
-    &--item {}
+    &--item {
+        position: relative;
+        counter-increment: my-awesome-counter;
+        padding-left: 2%;
+    }
+
+    &--item:before {
+        font-family: $yesevaone-font;
+        content: '0'counter(my-awesome-counter);
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+        position: absolute;
+        --size: 42px;
+        left: calc(-1 * var(--size) - 10px);
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+
+        background: $light-gold;
+        border-radius: 50%;
+        text-align: center;
+    }
 
     // .circle_of_advanteges--text
 
@@ -44,21 +107,85 @@
 
 .request {
     width: calc(100%*506/1440);
+    display: flex;
+    flex-direction: column;
+
 }
 
 .request_form {
+    margin-top: 21.8%;
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5%;
 
     // .request_form--title
 
-    &--title {}
+    &--title {
+        font-family: $futurademic-font;
+        font-size: 2rem;
+        width: 50%;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    &--input_block {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 9.1%;
+    }
+
+    // .request_form--input
+
+    &--input {
+        border: 0;
+        border-bottom: 1.5px solid #9c9c9c;
+        padding-bottom: 2.3%;
+        font-size: 1.8rem;
+        font-family: $futuramediumc-font;
+        background-color: $main-color;
+
+    }
+
+    &--input::placeholder {
+        opacity: 1;
+        color: #363636;
+        color: white;
+    }
+
+    // .request_form--name
+
+    &--name {}
+
+    // .request_form--input_name_label
+
+    &--input_label {
+        width: 80%;
+        color: #9c9c9c;
+        font-size: 1.5rem;
+    }
 
     // .request_form--input_name
 
     &--input_name {}
 
+    // .request_form--number
+
+    &--number {}
+
+
     // .request_form--input_number
 
     &--input_number {}
+
+    // .request_form--email
+
+    &--email {}
+
 
     // .request_form--input_email
 
@@ -77,22 +204,118 @@
         &-activated {}
     }
 
+    &--checkbox_label {
+        font-family: $futurabookc-font;
+        margin-top: 4.3%;
+        margin-right: 26%;
+        font-size: 1.5em;
+        opacity: 1;
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        padding-top: 0.6%;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: white;
+
+    }
+
+    &--checkbox_label input {
+
+        font-size: 1.6rem;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &--checkmark {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+    }
+
+    &--checkbox_label:hover input~.request_form--checkmark {
+        background-color: #ccc;
+    }
+
+    &--checkbox_label input:checked~.request_form--checkmark {
+        background-color: $light-gold;
+    }
+
+    &--checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    &--checkbox_label input:checked~.request_form--checkmark:after {
+        display: block;
+    }
+
+    &--checkbox_label .request_form--checkmark:after {
+        left: 7px;
+        top: 5px;
+        width: 5px;
+        height: 7px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
     // .request_form--submit_button
 
-    &--submit_button {}
+    &--submit_button {
+        border-radius: 0;
+        font-size: 1.3rem;
+        margin: 7% 0 5% 38%;
+        padding: 1.5% 9.2%;
+    }
 }
 
 .request_info {
 
-    // .request_info--helpsave
+    display: flex;
+    margin-top: 8%;
+    margin-left: 6%;
 
-    &--helpsave {}
 
     // .request_info--image
 
-    &--image {}
+    &--piggy_image {
+        background-color: $light-gold;
+        min-width: 72px;
+        min-height: 72px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .request_info--svg
+
+    &--piggy_svg {
+        width: 40px;
+        height: 40px;
+    }
 
     // .request_info--save_help_text
 
-    &--save_help_text {}
+    &--save_help_text {
+        font-family: $futuramediumc-font;
+        color: $light-gold;
+        font-size: 2rem;
+        padding-top: 2%;
+        padding-left: 6%;
+        line-height: 25px;
+    }
 }
