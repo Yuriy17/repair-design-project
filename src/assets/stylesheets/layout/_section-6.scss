@@ -1,0 +1,208 @@
+.furniture_ideas {
+    display: flex;
+    background-image: url('./../img/furniture.png');
+    background-repeat: no-repeat;
+    margin-top: 16.8%;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        flex-direction: column;
+        align-items: center;
+        margin-top: 46.8%;
+
+        overflow: hidden;
+        background: linear-gradient(to bottom, #fff 0%, #fff 64%, $main-color 64%, $main-color 100%);
+
+    }
+}
+
+.ideas_info {
+    width: calc(100%*587/1440);
+    box-sizing: border-box;
+    padding-top: 9.4%;
+    padding-left: 7%;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        padding: 0 0;
+        width: auto;
+
+    }
+
+    /*margin-top: 10%; */
+
+    // .ideas_info--title
+
+    &--title {
+        font-family: $yesevaone-font;
+        color: $light-gold;
+        font-size: 2.7rem;
+        width: 274px;
+        line-height: 37px;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            text-align: center;
+            font-size: 2.2rem;
+            line-height: 32px;
+
+        }
+    }
+
+    // .ideas_info--nav
+
+    &--nav {
+        padding-top: 9%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: none;
+
+        }
+    }
+
+
+    // .ideas_info--list
+
+    &--list {}
+
+    // .ideas_info--item
+
+    &--item {
+        margin-bottom: 6%;
+    }
+
+    &--item:last-child {
+        margin-bottom: 0;
+    }
+
+    // .ideas_info--link
+
+    &--link {
+        font-family: $proximanova-font;
+        font-size: 2rem;
+        color: white;
+    }
+
+    &--link:hover {
+        color: $light-gold;
+
+        text-decoration: underline;
+    }
+
+    &--link.active {
+        color: $light-gold;
+        text-decoration: underline;
+    }
+}
+
+.ideas_pictures {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 907px;
+    width: calc(100%*751/1440);
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-height: 242px;
+        margin-top: 8%;
+        width: 340px;
+        /* width: calc(100%*340/375); */
+        background-image: url('./../img/furniture_1_mobile.png');
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+
+    }
+
+    // .ideas_pictures--image
+
+    &--image_1 {
+        margin-top: -5.5%;
+        margin-right: 5.8%;
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: none;
+
+        }
+
+    }
+
+    &--image_2 {
+        margin-top: 5.3%;
+        margin-right: 5.8%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: none;
+
+        }
+    }
+
+    &--image_3 {
+        margin-top: -14.8%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: none;
+
+
+        }
+    }
+
+    &--image_4 {
+        margin-top: 4.9%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: none;
+
+        }
+    }
+
+    &--left_control{
+        display: none;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: block;
+            position: relative;
+            width: 36px;
+            height: 36px;
+            background-color: $main-color;
+            border-radius: 50%;
+            
+
+        }
+
+
+    }
+    &--right_control{
+        display: none;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            display: block;
+            position: relative;
+            width: 36px;
+            height: 36px;
+            background-color: $main-color;
+            border-radius: 50%;
+            
+
+        }
+
+    }
+
+    &--left_control_arrow{
+        height: 38%;
+        transform: rotate(180deg);
+        
+    }
+    &--right_control_arrow{
+        height: 38%;
+        padding-left: 8%;
+    }
+}

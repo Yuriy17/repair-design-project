@@ -2,9 +2,10 @@
     display: flex;
     margin-top: 9.6%;
 
-    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
 
-        margin-top: 30%;
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        display: none;
 
     }
 }
