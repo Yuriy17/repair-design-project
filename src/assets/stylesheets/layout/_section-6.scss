@@ -105,6 +105,7 @@
 
     @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
 
+        position: relative;
         flex-direction: row;
         flex-wrap: nowrap;
         min-height: 242px;
@@ -167,13 +168,17 @@
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
 
-            display: block;
             position: relative;
             width: 36px;
             height: 36px;
-            background-color: $main-color;
+            background-color: $light-gold;
             border-radius: 50%;
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 5%;
 
         }
 
@@ -188,21 +193,32 @@
             position: relative;
             width: 36px;
             height: 36px;
-            background-color: $main-color;
+            background-color: $light-gold;
             border-radius: 50%;
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 74%;
 
         }
 
     }
 
     &--left_control_arrow{
+        position: relative;
         height: 38%;
+        width: 50%;
         transform: rotate(180deg);
+
         
     }
     &--right_control_arrow{
+
         height: 38%;
-        padding-left: 8%;
+        width: 50%;
+
+        
     }
 }

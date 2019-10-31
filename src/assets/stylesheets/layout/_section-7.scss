@@ -1,0 +1,243 @@
+.design_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.9%;
+    background: linear-gradient(to bottom, #fff 0%, #fff 52%, $main-color 52%, $main-color 100%);
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        background-color: $main-color;
+        color: white;
+        margin-top: 0;
+
+    }
+}
+
+.design_project_title {
+    font-family: $yesevaone-font;
+    font-size: 2rem;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        font-size: 2.2rem;
+        margin-top: 14.2%;
+
+    }
+
+}
+
+.line_pen_ruler_icon {
+    height: 28px;
+    margin-top: 1.2%;
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        margin-top: 4.9%;
+
+    }
+}
+
+.design_project_text {
+    margin-top: 1.5%;
+    font-size: 2rem;
+    width: 48.3%;
+    line-height: 27px;
+    text-align: center;
+
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        font-size: 1.5rem;
+        width: 78%;
+        margin-top: 5.8%;
+        line-height: 20px;
+
+    }
+
+}
+
+.design_types {
+
+    display: flex;
+    width: 85.8333333%;
+    margin-top: 3.2%;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        flex-direction: column;
+        width: 44%;
+        margin-top: 11.2%;
+
+    }
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: little-medium)) {
+
+
+        width: 70%;
+
+
+    }
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+
+        width: 80%;
+
+
+    }
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
+
+
+        width: 90%;
+
+
+    }
+
+    // .design_types--mini_view
+
+    &--mini_view {
+
+        display: flex;
+        justify-content: center;
+        width: calc(100%/3);
+        background-image: url('./../img/types_repair_1.png');
+        background-repeat: no-repeat;
+        margin-right: 2.5%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            width: 100%;
+            justify-content: flex-start;
+            background-size: cover;
+            height: 359px;
+
+        }
+
+    }
+
+    // .price_img--title
+
+    &--title {
+        font-family: 'Yeseva One';
+
+		font-size: 1.8rem;
+		padding-left: 9.8%;
+
+
+		@media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+			font-size: 1.5rem;
+	
+		}
+    }
+
+    // .design_types--content
+
+    &--content {
+        width: 84%;
+        background-color: white;
+        margin-top: 75%;
+        padding-top: 6.8%;
+        height: max-content;
+        -webkit-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+        box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            margin-top: 66%;
+            margin-bottom: -32%;
+            padding-top: 5.8%;
+            width: 80%;
+
+        }
+    }
+
+    // .design_types--list
+
+    &--list {
+        list-style-type: disc;
+        padding-left: 14%;
+        padding-top: 3.1%;
+        margin-bottom: 15%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            margin-bottom: 13%;
+
+        }
+    }
+
+    // .design_types--item
+
+    &--item {
+        font-size: 1.5rem;
+        color: #959595;
+        line-height: 25px;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            line-height: 22px;
+            font-size: 1.3rem;
+
+        }
+    }
+
+    // .design_types--button
+
+    &--button {
+        font-size: 1.8rem;
+        padding: 5% 23.7% 5% 10%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            font-size: 1.5rem;
+            padding: 5% 17.7% 4.2% 17%;
+
+        }
+    }
+
+    // .design_types--standart_view
+
+    &--standart_view {
+        display: flex;
+        justify-content: center;
+        width: calc(100%/3);
+        background-image: url('./../img/types_repair_3.png');
+        background-repeat: no-repeat;
+        margin-right: 2.5%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            width: 100%;
+            justify-content: flex-start;
+            margin-top: 35%;
+            background-image: url('./../img/types_repair_2.png');
+            background-size: cover;
+            height: 359px;
+
+        }
+    }
+
+    // .design_types--full_view
+
+    &--full_view {
+        display: flex;
+        justify-content: center;
+        width: calc(100%/3);
+        background-image: url('./../img/types_repair_2.png');
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+            width: 100%;
+            justify-content: flex-start;
+            margin-top: 54%;
+            background-image: url('./../img/types_repair_3.png');
+            background-size: cover;
+            height: 359px;
+
+        }
+    }
+}
