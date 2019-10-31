@@ -1,0 +1,180 @@
+.steps_to_goal {
+    display: flex;
+    color: white;
+    background-color: $main-color;
+    box-sizing: border-box;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        display: none;
+    }
+}
+
+.step_description {
+
+    width: calc(100%*572/1440);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 6.9%;
+
+    // .step_description--header_item
+
+    &--header_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .step_description--header_item_title_description
+
+    &--header_item_title_description {
+        font-family: $futurademic-font;
+        font-size: 1.5rem;
+    }
+
+    // .step_description--header_item_title
+
+    &--header_item_title {
+        display: flex;
+        width: 305px;
+        height: 74px;
+        padding-top: 3%;
+        justify-content: space-between;
+    }
+
+    // .step_description--header_item_title_text
+
+    &--header_item_title_text {
+        font-family: 'Yeseva One';
+        color: $light-gold;
+        font-size: 2.7rem;
+        line-height: 37px;
+        max-width: 155px;
+        box-sizing: border-box;
+    }
+
+    // .step_description--title_line
+
+    &--title_line {
+        width: 92px;
+        margin-bottom: 17px;
+        border-bottom: 1px solid $light-gold;
+        box-sizing: border-box;
+    }
+
+    // .step_description--goal_item
+
+    &--goal_item {
+        margin-top: 19.4%;
+    }
+
+    // .step_description--goal_item_number
+
+    &--goal_item_number {
+        font-size: 1.8rem;
+        font-family: $yesevaone-font;
+    }
+
+    // .step_description--goal_item_title
+
+    &--goal_item_title {
+        margin-top: 4%;
+        font-family: $yesevaone-font;
+        font-size: 1.5rem;
+        line-height: 23px;
+        color: $light-gold;
+    }
+
+    // .step_description--goal_item_text
+
+    &--goal_item_text {
+        margin-top: 2%;
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+
+    // .step_description--circles_arrows
+
+    &--circles_arrows {
+        display: flex;
+        justify-content: space-between;
+        max-width: 288.68px;
+        max-height: 13.28px;
+        padding-top: 22%;
+    }
+
+    // .step_description--arrow_left
+
+    &--arrow_left {
+
+        transform: rotate(180deg);
+        max-width: 44px;
+
+    }
+
+    // .step_description--circle
+
+    &--circle {
+
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        width: 9.57px;
+        height: 9.57px;
+
+    }
+
+    // active .step_description--circle
+
+    &--circle.active {
+        background: #fff !important;
+    }
+
+
+    // .step_description--arrow_right
+
+    &--arrow_right {
+
+        max-width: 44px;
+
+    }
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%*868/1440);
+    padding-top: 6%;
+}
+
+.steps_list {
+    display: flex;
+    flex-wrap: wrap;
+
+    // .steps_list--item
+
+    &--item {
+        width: calc(100%/3);
+        margin-bottom: 5.2%;
+    }
+
+    // .steps_list--title
+
+    &--title {
+        font-family: $yesevaone-font;
+        font-size: 1.5rem;
+        border-bottom: 1px solid $light-gold;
+        width: 6.7%;
+    }
+
+
+    // .steps_list--text
+
+    &--text {
+        font-size: 1.5rem;
+        padding-top: 6%;
+    }
+}
+
+.steps_image {
+    width: 88.2%;
+}

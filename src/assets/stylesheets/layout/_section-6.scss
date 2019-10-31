@@ -168,7 +168,7 @@
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
 
-            position: relative;
+            position: absolute;
             width: 36px;
             height: 36px;
             background-color: $light-gold;
@@ -190,7 +190,7 @@
         @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
 
             display: block;
-            position: relative;
+            position: absolute;
             width: 36px;
             height: 36px;
             background-color: $light-gold;
@@ -200,7 +200,7 @@
             align-items: center;
             transform: translateY(-50%);
             top: 50%;
-            left: 74%;
+            right: 5%;
 
         }
 
