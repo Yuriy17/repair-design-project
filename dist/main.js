@@ -9919,7 +9919,7 @@ requireAll(require.context('./assets/icons/', true, /\.svg$/)); */
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/yuriy17/Projects/RScopes/repair-design-project/node_modules/webpack-dev-server/client/index.js?http://localhost:9000 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:9000");
+__webpack_require__(/*! /home/yuriy17/work/GitRSchool/1part/repair-design-project/node_modules/webpack-dev-server/client/index.js?http://localhost:9000 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:9000");
 module.exports = __webpack_require__(/*! ./src/app.js */"./src/app.js");
 
 

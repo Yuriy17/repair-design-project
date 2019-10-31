@@ -1,0 +1,197 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, $main-color 0%, $main-color 54%, #fff 54%, #fff 100%);
+    color: white;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        padding-top: 47.7%;
+        background: $main-color;
+
+    }
+}
+
+.team_title {
+    margin-top: 7%;
+    font-family: $yesevaone-font;
+    font-size: 2rem;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        font-size: 2.2rem;
+
+    }
+}
+
+.team_line_icon {
+    height: 28px;
+    margin-top: 1.2%;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        margin-top: 3.2%;
+
+    }
+}
+
+.team_title_text {
+    margin-top: 1.5%;
+    font-size: 2rem;
+    width: 32%;
+    line-height: 27px;
+    text-align: center;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        font-size: 1.5rem;
+        width: 86%;
+        margin-top: 4.5%;
+
+    }
+}
+
+.team_photos {
+    display: flex;
+    margin-top: 5.5%;
+    justify-content: space-between;
+    width: calc(100%*1028/1440);
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+
+    }
+
+    // .team_photos--card
+
+    &--card {
+        width: calc(100%*278/1028);
+        position: relative;
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            width:auto;
+            margin-bottom: 54%;
+    
+        }
+    }
+
+    &--card:nth-child(3) {
+        @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+            margin-bottom: 47%;
+    
+        }
+    }
+
+    // .team_photos--image
+
+    &--image {}
+
+    // .team_photos--badge
+
+    &--badge {
+        width: calc(100%*233/278);
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: $main-color;
+        position: absolute;
+        bottom: -14.7%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    // .team_photos--badge_name
+
+    &--badge_name {
+        font-family: 'Yeseva One';
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    &--badge_profession {
+        font-size: 1.5rem;
+        color: #959595;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    // .team_photos--experience
+
+    &--experience {
+
+        font-size: 1.3rem;
+        padding: 7% 5%;
+        margin-top: 11%;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    // .team_photos--icon
+
+    &--icon {
+        position: absolute;
+        top: -10%;
+        left: -12%;
+        width: 70px;
+        height: 70px;
+        background-color: $light-gold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .team_photos--icon_item
+
+    &--icon_item {
+
+        height: 44px;
+
+    }
+}
+
+.team_line {
+    margin-top: 7.2%;
+    width: 55px;
+    height: 3px;
+    background-color: $light-gold;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        display: none;
+    }
+}
+
+.team_text_1 {
+    margin-top: 1%;
+    color: $main-color;
+    font-size: 2rem;
+    line-height: 34px;
+    width: 37%;
+    text-align: center;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        display: none;
+    }
+}
+
+.team_text_2 {
+
+    color: $main-color;
+    font-size: 2rem;
+    line-height: 34px;
+    width: 39%;
+    text-align: center;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: extra-large)) {
+
+        display: none;
+    }
+}

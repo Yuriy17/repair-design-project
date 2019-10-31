@@ -117,7 +117,7 @@
 
     }
 
-    // .price_img--title
+    // .design_types--title
 
     &--title {
         font-family: 'Yeseva One';
@@ -128,7 +128,8 @@
 
 		@media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
 
-			font-size: 1.5rem;
+            font-size: 1.5rem;
+            color: $main-color;
 	
 		}
     }
@@ -170,6 +171,12 @@
 
         }
     }
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        &--item:nth-child(n+8){
+            display: none;
+        }
+    }
 
     // .design_types--item
 
@@ -182,8 +189,10 @@
 
             line-height: 22px;
             font-size: 1.3rem;
+            
 
         }
+
     }
 
     // .design_types--button
