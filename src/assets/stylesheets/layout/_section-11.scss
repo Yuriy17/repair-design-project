@@ -1,0 +1,268 @@
+.questions_receive {
+    background: linear-gradient(to bottom, #fff 0%, #fff 54%, $main-color 54%, $main-color 100%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10.9%;
+    @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+        background:$main-color;
+        margin-top: -4.1%;
+        
+
+    } 
+}
+
+.questions_receive_form {
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100%*883/1440);
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+        width: 100%;
+        
+
+    } 
+
+    // .questions_receive_form--title
+
+    &--title {
+        font-family: $yesevaone-font;
+        font-size: 2rem;
+        margin-top: 4%;
+    }
+
+    // .questions_receive_form--inputs
+
+    &--inputs {
+        width: calc(100%*520/883);
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 6%;
+        justify-content: space-between;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+            width: 85%;
+            
+
+        } 
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+            width: 65%;
+            
+
+        }
+        
+        @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
+
+            width: 90%;
+            
+
+        } 
+    }
+
+    // .questions_receive_form--input
+
+    &--input {
+        background-color: $main-color;
+        border: 0;
+        border-bottom: 1.5px solid #9c9c9c;
+
+        padding-bottom: 2.3%;
+        font-size: 1.8rem;
+        font-family: $futurabookc-font;
+
+        /*         @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+            background-color: $main-color;
+            width: 100%;
+
+        } */
+
+    }
+
+
+    &--input::placeholder {
+        opacity: 1;
+        color: white;
+
+        /*         @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
+
+            color: white;
+
+
+        } */
+    }
+
+    // .questions_receive_form--input_name
+
+    &--input_label {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.5rem;
+
+
+    }
+
+
+
+    // .questions_receive_form--input_name
+
+    &--input_name {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+            width: 100%;
+            margin-top: 10%;
+
+        } 
+    }
+
+    // .questions_receive_form--input_number
+
+    &--input_number {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+            width: 100%;
+            margin-top: 19%;
+
+        } 
+    }
+
+
+    &--input_question {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 9%;
+
+        input {
+            width: 100%;
+        }
+
+        label {
+            width: 100%;
+        }
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+            margin-top: 19%;
+
+        } 
+    }
+
+    &--checkbox_label {}
+
+    // .questions_receive_form--checkbox
+
+    &--checkbox {
+
+        // .questions_receive_form--checkbox-activated
+
+        &-activated {}
+    }
+
+    &--checkbox_label {
+        font-family: $futurabookc-font;
+        margin-top: 4.7%;
+        font-size: 1.5em;
+        opacity: 1;
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        padding-top: 0.6%;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: white;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
+
+            width: 81%;
+
+        } 
+
+    }
+
+    &--checkbox_label input {
+
+        font-size: 1.6rem;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &--checkmark {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+    }
+
+    &--checkbox_label:hover input~.questions_receive_form--checkmark {
+        background-color: #ccc;
+    }
+
+    &--checkbox_label input:checked~.questions_receive_form--checkmark {
+        background-color: $light-gold;
+    }
+
+    &--checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    &--checkbox_label input:checked~.questions_receive_form--checkmark:after {
+        display: block;
+    }
+
+    &--checkbox_label .questions_receive_form--checkmark:after {
+        left: 7px;
+        top: 5px;
+        width: 5px;
+        height: 7px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    // .questions_receive_form--submit_button
+
+    &--submit_button {
+        font-family: $futurademic-font;
+        border-radius: 0;
+        font-size: 1.5rem;
+        margin-top: 5.8%;
+        padding: 0.9% 8.5%;
+        @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
+
+            margin-top: 19.2%;
+padding: 1.9% 38.5%;
+
+        } 
+    }
+    
+}
