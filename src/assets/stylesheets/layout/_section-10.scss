@@ -1,0 +1,123 @@
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $main-color;
+    @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+
+        display: none;
+
+    }
+}
+
+.clients_title {
+    margin-top: 6.4%;
+    font-family: $yesevaone-font;
+    font-size: 2rem;
+}
+
+.clients_line_icon {
+    height: 28px;
+    margin-top: 1.2%;
+}
+
+.clients_title_text {
+    margin-top: 1.5%;
+    font-size: 2rem;
+    width: 27%;
+    line-height: 27px;
+    text-align: center;
+}
+
+.clients_feedback {
+    display: flex;
+    width: calc(100%*1236/1440);
+    justify-content: space-between;
+    margin-top: 4.9%;
+}
+
+.client {
+    width: calc(100%*375/1236);
+    padding-left: 1.6%;
+    box-sizing: border-box;
+    -webkit-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.1);
+    box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.1);
+
+    // .client--name_item
+
+    &--name_item {
+        display: flex;
+        margin-bottom: 4%;
+    }
+
+    // .client--image
+
+    &--image {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+    }
+
+    // .client--name
+
+    &--name {
+        font-family: $yesevaone-font;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        line-height: 23px;
+        padding-left: 7%;
+        width: 50%;
+    }
+
+    // .client--text_item
+
+    &--text_item {
+        font-size: 1.5rem;
+        color: #959595;
+        line-height: 27px;
+        width: 92%;
+        margin-top: 1.8%;
+    }
+
+    // .client--technical_item
+
+    &--technical_item {
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 82%;
+        margin-left: -5%;
+        margin-top: 18%;
+        margin-bottom: -7%;
+    }
+
+    &--technical_item_elem {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 50%;
+        padding: 4% 0%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &--technical_item_elem:first-child {
+        border-right: 2px solid rgba(255, 255, 255, 0.342);
+
+    }
+
+    &--technical_item_icon {
+        height: 32px;
+        width: 34px;
+    }
+
+    &--technical_item_text {
+        /* width: 54%; */
+
+        font-size: 1.7rem;
+        font-family: $yesevaone-font;
+    }
+}
+
+.span {}
