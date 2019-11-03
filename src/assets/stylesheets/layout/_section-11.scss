@@ -1,15 +1,16 @@
 .questions_receive {
-    background: linear-gradient(to bottom, #fff 0%, #fff 54%, $main-color 54%, $main-color 100%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 50%, rgba(0, 0, 0, 0.884) 50%, rgba(0, 0, 0, 0.884) 100%);
     display: flex;
     justify-content: center;
     margin-top: 10.9%;
+
     @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
-        background:$main-color;
+        background: $main-color;
         margin-top: -4.1%;
-        
 
-    } 
+
+    }
 }
 
 .questions_receive_form {
@@ -23,9 +24,9 @@
     @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
         width: 100%;
-        
 
-    } 
+
+    }
 
     // .questions_receive_form--title
 
@@ -47,23 +48,23 @@
         @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
 
             width: 85%;
-            
 
-        } 
+
+        }
 
         @media screen and (max-width: map-get($map: $breakpoints, $key: little)) {
 
             width: 65%;
-            
+
 
         }
-        
+
         @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
 
             width: 90%;
-            
 
-        } 
+
+        }
     }
 
     // .questions_receive_form--input
@@ -72,7 +73,7 @@
         background-color: $main-color;
         border: 0;
         border-bottom: 1.5px solid #9c9c9c;
-
+        color: white;
         padding-bottom: 2.3%;
         font-size: 1.8rem;
         font-family: $futurabookc-font;
@@ -123,7 +124,7 @@
             width: 100%;
             margin-top: 10%;
 
-        } 
+        }
     }
 
     // .questions_receive_form--input_number
@@ -139,7 +140,7 @@
             width: 100%;
             margin-top: 19%;
 
-        } 
+        }
     }
 
 
@@ -162,7 +163,7 @@
 
             margin-top: 19%;
 
-        } 
+        }
     }
 
     &--checkbox_label {}
@@ -196,7 +197,7 @@
 
             width: 81%;
 
-        } 
+        }
 
     }
 
@@ -256,13 +257,16 @@
         border-radius: 0;
         font-size: 1.5rem;
         margin-top: 5.8%;
+        margin-bottom: 4%;
         padding: 0.9% 8.5%;
+
         @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
 
             margin-top: 19.2%;
-padding: 1.9% 38.5%;
+            
+            padding: 1.9% 38.5%;
 
-        } 
+        }
     }
-    
+
 }

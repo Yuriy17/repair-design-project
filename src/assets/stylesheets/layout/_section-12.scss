@@ -1,0 +1,96 @@
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+.address_title {
+    margin-top: 3.3%;
+    line-height: 28px;
+    font-family: $yesevaone-font;
+    font-size: 2rem;
+    color: $light-gold;
+    width: 45%;
+    text-align: center;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+        width: 82%;
+        font-size: 1.8rem;
+        order: 2;
+        margin-top: 1.3%;
+        line-height: 26px;
+
+    }
+}
+
+.address_icons {
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    width: 71px;
+    margin-top: 1.7%;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+        order: 3;
+        height: 40px;
+        width: 100px;
+        margin-top: 5.7%;
+        margin-bottom: 10.2%;
+
+    }
+
+    // .address_icons--link
+
+    &--link {
+        width: calc(100%*28/71);
+        border-radius: 50%;
+        background-color: $light-gold;
+
+    }
+
+    // .address_icons--link_icon
+
+    &--link_icon {
+        position: relative;
+        height: 13px;
+        width: 13px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+
+
+            height: 17px;
+            width: 17px;
+
+
+
+        }
+    }
+}
+
+// .address_image
+
+.address_image {
+    margin-top: 2.1%;
+    margin-bottom: 1.2%;
+    width: 100%;
+    max-width: 988px;
+    height: auto;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+        order: 1;
+        object-fit: cover;
+        width: 340px;
+        height: 288px;
+        margin-top: 7%;
+
+    }
+}

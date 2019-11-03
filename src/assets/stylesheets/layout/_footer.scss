@@ -1,3 +1,93 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+    
+    background-color: $main-color;
+    color: white;
+    font-size: 1.4rem;
+    height: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+
+        height: 58px;
+
+    }
+    @media screen and (max-width: map-get($map: $breakpoints, $key: small-little)) {
+
+        display: none;
+
+    }
+    
+    // .header-wrapper
+
+    &_wrapper {
+        width: 88.5%;
+        height: 44.58%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header--logo_item
+
+    &--logo_item {
+
+        font-family: $futurademic-font;
+        color:$light-gold;
+
+    }
+
+    // .header--nav_item
+
+    &--nav_item {
+
+        width:46.2%;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+            
+            width: auto;
+
+        }
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+            
+            display: none;
+
+        }
+
+
+    }
+
+    // .header--tel_link_item
+
+    &--tel_link_item {
+
+        font-family: $futurademic-font;
+        color:$light-gold;
+        text-decoration: underline;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: medium)) {
+            
+            color:white;
+            text-decoration: none;
+
+        }
+        
+    }
+
+    // .header--request_button_item
+
+    &--request_button_item {
+
+        padding: 0 31px;
+
+        @media screen and (max-width: map-get($map: $breakpoints, $key: large)) {
+            display: none;
+        }
+
+    }
+}

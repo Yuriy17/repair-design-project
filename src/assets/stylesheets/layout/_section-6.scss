@@ -180,6 +180,17 @@
             top: 50%;
             left: 5%;
 
+            &:hover {
+                -webkit-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+                box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+                .ideas_pictures--left_control_arrow{
+                    stroke: $main-color;
+                    stroke-opacity: 0.3;
+                    stroke-width: 11%;
+                }
+            }
+
         }
 
 
@@ -202,6 +213,16 @@
             top: 50%;
             right: 5%;
 
+            &:hover {
+                -webkit-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+                box-shadow: 9px 9px 19px -11px rgba(0, 0, 0, 0.75);
+                .ideas_pictures--right_control_arrow{
+                    stroke: $main-color;
+                    stroke-opacity: 0.3;
+                    stroke-width: 11%;
+                }
+            }
         }
 
     }

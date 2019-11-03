@@ -17,6 +17,7 @@
     position: relative;
     background-image: url('./../img/circle_background.png');
     background-repeat: no-repeat;
+    overflow-x: hidden;
 
 
 
@@ -149,6 +150,7 @@
         font-size: 1.8rem;
         font-family: $futuramediumc-font;
         background-color: $main-color;
+        color: white;
 
     }
 
@@ -158,9 +160,6 @@
         color: white;
     }
 
-    // .request_form--name
-
-    &--name {}
 
     // .request_form--input_name_label
 
@@ -170,33 +169,6 @@
         font-size: 1.5rem;
     }
 
-    // .request_form--input_name
-
-    &--input_name {}
-
-    // .request_form--number
-
-    &--number {}
-
-
-    // .request_form--input_number
-
-    &--input_number {}
-
-    // .request_form--email
-
-    &--email {}
-
-
-    // .request_form--input_email
-
-    &--input_email {}
-
-    // .request_form--checkbox_label
-
-    &--checkbox_label {}
-
-    // .request_form--checkbox
 
     &--checkbox {
 
@@ -280,6 +252,7 @@
         font-size: 1.3rem;
         margin: 7% 0 5% 38%;
         padding: 1.5% 9.2%;
+        cursor: pointer;
     }
 }
 
